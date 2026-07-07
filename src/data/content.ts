@@ -34,17 +34,17 @@ export const projects: Project[] = [
     status: "Ongoing",
     stack: ["Python", "TensorFlow", "Autoencoders", "Bidirectional LSTM", "Signal Processing"],
     bullets: [
-      "Architected a hybrid deep learning model — an Autoencoder feeding into a Bidirectional LSTM — to distinguish Alzheimer's Disease, Frontotemporal Dementia, and cognitively normal subjects from resting-state EEG.",
-      "Processed 19-channel EEG at 500 Hz using Artifact Subspace Reconstruction and 0.5–45 Hz band-pass filtering to strip noise and motion artifacts before modeling.",
-      "Built a feature pipeline that segments signals into overlapping epochs and fuses compressed autoencoder embeddings with domain features like spectral entropy and multi-band power (alpha/beta/gamma).",
+      "Architected a hybrid deep learning model (Autoencoder + Bidirectional LSTM) to classify Alzheimer's Disease, Frontotemporal Dementia, and Cognitively Normal subjects from resting-state EEG signals across 3 classes.",
+      "Processed 19-channel EEG data (500 Hz) using Artifact Subspace Reconstruction (ASR) and 0.5–45 Hz band-pass filtering to remove signal noise and motion artifacts.",
+      "Engineered a feature extraction pipeline segmenting signals into overlapping epochs and fusing compressed Autoencoder embeddings with domain features (Spectral Entropy, multi-band power — Alpha/Beta/Gamma).",
     ],
   },
   {
     title: "Predicting Appreciation of the Indian Rupee",
     stack: ["XGBoost", "Pandas", "Streamlit", "Time-Series Forecasting"],
     bullets: [
-      "Built a forecasting model on time-series financial and macroeconomic data using XGBoost, benchmarked against a naive baseline for directional accuracy.",
-      "Engineered technical indicator features from raw market data and shipped the model behind an interactive Streamlit dashboard for real-time inference.",
+      "Developed a predictive ML model using XGBoost on time-series financial and macroeconomic data, benchmarked against a naive baseline for directional accuracy.",
+      "Engineered technical indicator features from raw market data and deployed the model via an interactive Streamlit dashboard for real-time inference.",
     ],
     github: "https://github.com/Aniket-Saw",
   },
@@ -52,17 +52,17 @@ export const projects: Project[] = [
     title: "Intelligent Personal Finance Manager",
     stack: ["Python", "Scikit-learn", "FastAPI", "SQLite"],
     bullets: [
-      "Built a Random Forest + TF-IDF pipeline that automatically categorizes transactions from raw descriptions.",
-      "Developed asynchronous FastAPI endpoints for real-time CRUD operations and inference at scale.",
-      "Designed the SQLite schema and engineered multi-dimensional Pandas features; built an interactive JS dashboard visualizing fixed vs. variable spending trends.",
+      "Built a Random Forest + TF-IDF NLP pipeline for automated transaction categorization.",
+      "Developed asynchronous FastAPI endpoints for real-time CRUD operations and model inference at scale.",
+      "Architected a SQLite schema and engineered multi-dimensional Pandas features; built an interactive JS dashboard visualizing fixed vs. variable spending trends.",
     ],
   },
   {
     title: "Suraksham",
     stack: ["Flutter", "Dart", "Firebase", "Google Gemini API"],
     bullets: [
-      "Integrated the Google Gemini API with prompt-engineered safety queries to power a context-aware conversational AI for emergency response.",
-      "Consumed real-time weather and seismic alert APIs; managed app state with Provider and secured user profiles via Firebase Authentication.",
+      "Integrated the Google Gemini API with prompt-engineered safety queries to power a context-aware conversational AI chatbot for emergency response.",
+      "Consumed real-time REST APIs (weather, seismic alerts); managed app state with Provider and secured user profiles via Firebase Authentication.",
     ],
     github: "https://github.com/Aniket-Saw",
   },
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     title: "CamDrop",
     stack: ["Python", "FastAPI", "PostgreSQL", "Supabase"],
     bullets: [
-      "Architected an offline-first PWA for digital event media aggregation, with a FastAPI backend managing PostgreSQL state and automated background media processing.",
+      "Architected an offline-first PWA with a FastAPI backend for PostgreSQL state management and automated background media processing.",
       "Implemented zero-data-loss local queuing via IndexedDB so uploads survive dropped connections.",
     ],
   },
@@ -89,7 +89,7 @@ export const experience: Experience[] = [
     org: "Dattaram Foundation",
     period: "Dec 2025 – Feb 2026",
     bullets: [
-      "Developed a full-stack SPA (React 18, TypeScript, Supabase, PostgreSQL) with role-based access control, Razorpay payment processing, and a data visualization admin dashboard built with Recharts and React Query.",
+      "Developed a full-stack SPA (React 18, TypeScript, Supabase, PostgreSQL) with role-based access control, payment processing (Razorpay), and a data visualization admin dashboard (Recharts, React Query).",
     ],
   },
   {
@@ -121,6 +121,18 @@ export const education: Education[] = [
     degree: "B.Tech, Electronics & Computer Science",
     period: "2023–2027",
     detail: "Semester 6 · CGPA 9.41",
+  },
+  {
+    school: "CBSE — 12th Boards",
+    degree: "Central Board of Secondary Education",
+    period: "Hazaribagh",
+    detail: "Score: 88%",
+  },
+  {
+    school: "D.Y. Patil Dnyan Pushpa Vidya Niketan",
+    degree: "CBSE — 10th Boards",
+    period: "Navi Mumbai",
+    detail: "Score: 95.2%",
   },
 ];
 
