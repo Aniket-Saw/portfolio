@@ -35,8 +35,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center overflow-hidden bg-grid"
+      className="relative flex min-h-screen items-center overflow-hidden"
     >
+      {/* Background Grid with smooth fade out at the bottom */}
+      <div className="absolute inset-0 bg-grid [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)] pointer-events-none" />
+      
       <AmbientOrbs />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_20%,var(--color-accent-soft),transparent)]" />
 

@@ -33,6 +33,14 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Hide native cursor on desktop — custom cursor takes over */
+    cursor: none;
+  }
+
+  /* Restore pointer cursor hint for screen readers / a11y tools;
+     the visual cursor is handled by CustomCursor.tsx */
+  a, button, [role="button"], input, textarea, select, label, [tabindex] {
+    cursor: none;
   }
 
   ::selection {
