@@ -7,7 +7,6 @@ import { experience } from "../data/content";
 
 // Dot vertical center within each item (px from item top)
 const DOT_CENTER = 17; // top-[11px] + 6px half of h-3
-const GAP = 40; // space-y-10
 
 export default function Experience() {
   const containerRef = useRef<HTMLDivElement>(null);
